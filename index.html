@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Tool Analiza Social Media</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard Analiză Social Media</h1>
+        
+        <div id="chartContainer">
+            <canvas id="engagementChart"></canvas>
+        </div>
+
+        <h2>Postări cu Cele Mai Bune Rezultate</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Postare</th>
+                    <th>Like-uri</th>
+                    <th>Comentarii</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Postare 1</td>
+                    <td>200</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Postare 2</td>
+                    <td>150</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Postare 3</td>
+                    <td>180</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button onclick="generatePDF()">Descarcă Raport</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
